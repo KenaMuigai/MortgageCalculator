@@ -12,7 +12,18 @@ public class Main {
         System.out.println(title);
         String principle = "Principle Amount: ";
         System.out.print(principle);
-        Integer principleAmount = scanner.nextInt();
-        System.out.print(principleAmount);
+        long principleAmount = scanner.nextLong();
+
+        String rate = "Annual Interest Rate: ";
+        System.out.print(rate);
+        double interestRate = scanner.nextDouble()/(double)100;
+
+        String period = "Period: ";
+        System.out.print(period);
+        int time = scanner.nextInt()*12;
+
+        System.out.println("Principle Amount is: " + principleAmount);
+        System.out.println("Annual Interest Rate: " + interestRate);
+        System.out.println("Period: " + time + " months");
     }
 }
